@@ -19,7 +19,7 @@ function _install_ffmpeg() {
 	--extra-libs=-lpthread \
 	--enable-gpl --enable-shared --enable-nonfree \
 	--enable-pthreads  --enable-libopencore-amrnb --enable-libopencore-amrwb \
-	--enable-libmp3lame --enable-openssl --disable-x86asm --enable-libvpx --enable-libfdk-aac --enable-libfreetype \
+	--enable-libmp3lame --enable-openssl --enable-libvpx --enable-libfdk-aac --enable-libfreetype \
 	--enable-libtheora --enable-libvorbis  --enable-libx264 --enable-libx265 --enable-libxvid \
 	--enable-postproc --enable-swscale --enable-avfilter --enable-libass --enable-runtime-cpudetect \
 	--extra-cflags=-I/usr/local/ffmpegtoolkit/include/ --extra-ldflags=-L/usr/local/ffmpegtoolkit/lib \
