@@ -98,6 +98,7 @@ sh ac_libvorbistools.sh
 sh ac_libvorbis.sh
 sh ac_libfishsound.sh
 sh ac_libopus.sh
+sh ac_libfaac.sh
 
 #### Video Package ####
 sh vc_vpx.sh
