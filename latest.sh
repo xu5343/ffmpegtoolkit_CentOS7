@@ -98,7 +98,6 @@ sh ac_libvorbistools.sh
 sh ac_libvorbis.sh
 sh ac_libfishsound.sh
 sh ac_libopus.sh
-sh ac_libfaac.sh
 
 #### Video Package ####
 sh vc_vpx.sh
@@ -109,7 +108,6 @@ sh vc_x265.sh
 sh vc_mplayer_codecs.sh
 sh vc_mplayer.sh
 sh vc_ffmpeg.sh
-#sh vc_ffmpeg31.sh
 
 ldconfig
 
