@@ -13,6 +13,7 @@ function _install_vpx() {
 	./configure --prefix=$INSTALL_DIR --enable-shared --enable-pic --disable-examples --disable-unit-tests
 	make -j $cpu
 	make install
+	make clean
 	echo -e $RED"Installation of $_package ....... Completed"$RESET
 	cd $SOURCE_DIR/
 }
