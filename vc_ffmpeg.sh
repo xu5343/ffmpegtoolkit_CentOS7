@@ -9,7 +9,7 @@ function _install_ffmpeg() {
 	rm -vrf ffmpeg*
 	#git clone https://github.com/FFmpeg/FFmpeg.git ffmpeg
 	#cd ffmpeg/
-	wget http://ffmpeg.org/releases/ffmpeg-4.1.8.tar.gz
+	#wget http://ffmpeg.org/releases/ffmpeg-4.1.8.tar.gz
 	tar xzvf ffmpeg-4.1.8.tar.gz
 	cd ffmpeg-4.1.8/
 	ldconfig
