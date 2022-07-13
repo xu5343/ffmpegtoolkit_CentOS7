@@ -7,8 +7,11 @@ function _install_ffmpeg() {
 	echo -e $RED"Installation of $_package ....... started"$RESET
 	cd $SOURCE_DIR/
 	rm -vrf ffmpeg*
-	git clone https://github.com/FFmpeg/FFmpeg.git ffmpeg
-	cd ffmpeg/
+	#git clone https://github.com/FFmpeg/FFmpeg.git ffmpeg
+	#cd ffmpeg/
+	wget http://ffmpeg.org/releases/ffmpeg-4.0.6.tar.xz
+	tar xvf ffmpeg-4.0.6.tar.xz
+	cd ffmpeg-4.0.6/
 	ldconfig
         export LD_LIBRARY_PATH=/usr/local/ffmpegtoolkit/lib:/usr/local/lib:/usr/lib:$LD_LIBRARY_PATH
         export LIBRARY_PATH=/usr/local/ffmpegtoolkit/lib:/usr/lib:/usr/local/lib:$LIBRARY_PATH
