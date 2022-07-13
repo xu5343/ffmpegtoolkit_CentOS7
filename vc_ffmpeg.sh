@@ -10,7 +10,7 @@ function _install_ffmpeg() {
 	#git clone https://github.com/FFmpeg/FFmpeg.git ffmpeg
 	#cd ffmpeg/
 	wget http://ffmpeg.org/releases/ffmpeg-4.1.8.tar.gz
-	tar xvf ffmpeg-4.1.8.tar.gz
+	tar xzvf ffmpeg-4.1.8.tar.gz
 	cd ffmpeg-4.1.8/
 	ldconfig
         export LD_LIBRARY_PATH=/usr/local/ffmpegtoolkit/lib:/usr/local/lib:/usr/lib:$LD_LIBRARY_PATH
