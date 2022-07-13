@@ -10,7 +10,7 @@ it's free
  * install mediainfo neroaccenc 
  * working CentOS 7.* 64bit, other not testing
 
-### Update
+### Update（ffmpeg版本目前为：4.1.8）
  * add libfaac support (24/03/2022)
  * add libass support (16/03/2018)
  * add NVIDIA CUDA   (New versions wait add it)
@@ -54,4 +54,6 @@ ImageMagick Command Path
 /usr/bin/convert
 /usr/bin/composite
 
-```
+```  
+#目前使用ffmpeg 3.1  
+#注ffmpeg3.0x版本使用--enable-libfaac ，ffmpeg4.1版本后使用--enable-libfdk-aac  
