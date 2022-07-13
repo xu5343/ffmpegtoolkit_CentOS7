@@ -55,5 +55,4 @@ ImageMagick Command Path
 /usr/bin/composite
 
 ```  
-#目前使用ffmpeg 3.1  
 #注ffmpeg3.0x版本使用--enable-libfaac ，ffmpeg4.1版本后使用--enable-libfdk-aac  
