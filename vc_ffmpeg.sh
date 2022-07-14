@@ -3,15 +3,15 @@
 function _install_ffmpeg() {
 	clear
 	_file=""
-	_package=""
+	_package="ffmpeg-4.1.8"
 	echo -e $RED"Installation of $_package ....... started"$RESET
 	cd $SOURCE_DIR/
 	rm -vrf ffmpeg*
 	#git clone https://github.com/FFmpeg/FFmpeg.git ffmpeg
 	#cd ffmpeg/
-	#wget http://ffmpeg.org/releases/ffmpeg-4.1.8.tar.gz
-	tar xzvf ffmpeg-4.1.8.tar.gz
-	cd ffmpeg-4.1.8/
+	wget http://ffmpeg.org/releases/$_package.tar.gz
+	tar xzvf $_package.tar.gz
+	cd $_package/
 	ldconfig
         export LD_LIBRARY_PATH=/usr/local/ffmpegtoolkit/lib:/usr/local/lib:/usr/lib:$LD_LIBRARY_PATH
         export LIBRARY_PATH=/usr/local/ffmpegtoolkit/lib:/usr/lib:/usr/local/lib:$LIBRARY_PATH
