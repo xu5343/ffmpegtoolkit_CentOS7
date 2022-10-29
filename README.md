@@ -52,8 +52,9 @@ ImageMagick Command Path
 [root@dev ~]# which {identify,convert,composite}
 /usr/bin/identify
 /usr/bin/convert
-/usr/bin/composite
+/usr/bin/composite  
 
+#注ffmpeg3.0x版本使用--enable-libfaac ，ffmpeg4.1版本后使用--enable-libfdk-aac  
 ```  
 ## centos源码安装后卸载  
 ### 卸载一个软件时  
@@ -74,7 +75,6 @@ rpm -e ffmpeg//卸载时只需要写入包名即可，没有任何提示，则�
 whereis ffmpeg   //查看哪里还有
 rm -rf xxx/ffmpeg
 ```  
-#注ffmpeg3.0x版本使用--enable-libfaac ，ffmpeg4.1版本后使用--enable-libfdk-aac  
 
 
 
