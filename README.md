@@ -55,7 +55,28 @@ ImageMagick Command Path
 /usr/bin/composite
 
 ```  
+## centos源码安装后卸载  
+### 卸载一个软件时  
+```  
+yum -y remove ffmpeg
+```  
+### 源码安装卸载
+```  
+make uninstall
+
+```  
+不过有些程序没有uninstall ， ./configure 后就能在Makefile中看出。
+这样你只能亲自删了， 主要有(/，/usr/，/usr/local/ ...) bin ，etc ，lib ，share 等目录。
+要是看install部分，从其中找出tar格式的文件被复制到了什么路径，然后进入相应的目录进行删除即可。
+还有就是软件生成的一些目录也要注意一下。  
+```  
+rpm -e ffmpeg//卸载时只需要写入包名即可，没有任何提示，则说明已经卸载。提示错误的话，说明要解决它的依赖性。
+whereis ffmpeg   //查看哪里还有
+rm -rf xxx/ffmpeg
+```  
 #注ffmpeg3.0x版本使用--enable-libfaac ，ffmpeg4.1版本后使用--enable-libfdk-aac  
+
+
 
 # 使用静态ffmpeg二进制文件秒安装ffmpeg(2022/10/29测试通过)  
 ## 安装 依赖  
