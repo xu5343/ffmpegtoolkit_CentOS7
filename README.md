@@ -56,3 +56,25 @@ ImageMagick Command Path
 
 ```  
 #注ffmpeg3.0x版本使用--enable-libfaac ，ffmpeg4.1版本后使用--enable-libfdk-aac  
+
+# 使用静态ffmpeg二进制文件秒安装ffmpeg(2022/10/29测试通过)  
+## 安装 依赖  
+```
+yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum -y groupinstall "Development Tools"
+yum -y install cairo cairo-devel wget git kernel-headers
+```
+## 安装 ffmpeg  
+```
+#32位下载二进制文件
+wget https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-i686-static.tar.xz
+#64位下载二进制文件
+wget https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz
+
+#解压文件
+tar xvf ffmpeg-git-*-static.tar.xz && rm -rf ffmpeg-git-*-static.tar.xz
+
+#移动文件
+mv ffmpeg-git-*/ffmpeg  ffmpeg-git-*/ffprobe /usr/bin/
+which {ffmpeg,ffprobe}  
+```
