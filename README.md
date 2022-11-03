@@ -87,8 +87,8 @@ yum -y install cairo cairo-devel wget git kernel-headers
 ```
 ## 安装 ffmpeg  
 ```
-#32位下载二进制文件
 #官方
+#32位下载二进制文件
 wget https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-i686-static.tar.xz
 #64位下载二进制文件  
 wget https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz
