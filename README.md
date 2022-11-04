@@ -103,6 +103,6 @@ wget --no-check-certificate https://sourceforge.net/projects/ggo5343/files/ffmpe
 tar xvf ffmpeg-git-*-static.tar.xz && rm -rf ffmpeg-git-*-static.tar.xz
 
 #移动文件
-mv ffmpeg-git-*/ffmpeg  ffmpeg-git-*/ffprobe /usr/bin/
+mv ffmpeg-git-*/ffmpeg  ffmpeg-git-*/ffprobe /usr/local/bin/
 which {ffmpeg,ffprobe}  
 ```
